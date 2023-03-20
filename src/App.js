@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import ArrayUsestate from './ArrayUsestate';
+// import { add, sub, mult, div } from "./Calcul"
+import BasicForm from './Componets/Forms/BasicForm';
+import ShortCircuitEval from './ShortCircuitEval';
+// import SumCalcul from './SumCalcul';
+import ToggalUsestate from './ToggalUsesate';
+import Usestate from './Usestate';
 
-function App() {
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <SumCalcul/> */}
+    <Usestate/>
+    <ToggalUsestate/>
+    <ArrayUsestate/>
+    <ShortCircuitEval/>
+    <BasicForm/>
+    </>
   );
 }
 
